@@ -1,0 +1,130 @@
+:root {
+    --primary: #3B82F6;
+    --primary-light: #60A5FA;
+    --secondary: #1E40AF;
+    --accent: #EC4899;
+    --dark: #1F2937;
+    --light: #F8FAFC;
+    --gray: #6B7280;
+    --border: #475569;
+    --card-bg: #334155;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --shadow-hover: rgba(59, 130, 246, 0.3);
+    --bg-dark: #1E293B;
+    --bg-dark-light: #1E293B;
+    --text-primary: #F1F5F9;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --success: #10B981;
+    --warning: #FBBF24;
+    --error: #EF4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: var(--bg-dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Background watermark */
+body::before {
+    content: '∫';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    color: rgba(59, 130, 246, 0.08);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.02em;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Math symbol styling */
+.math-symbol {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    display: block;
+}

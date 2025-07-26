@@ -1,0 +1,245 @@
+{
+    "problems": [
+        {
+            "id": 1,
+            "problem_statement": "Evaluate the integral f(x,y) = (x + y) ds where C is the straight-line segment x = t, y = 1 - t, z = 0, from (0, 1, 0) to (1, 0, 0).",
+            "curve": {
+              "parametric_equations": "x(t) = t, y(t) = 1 - t, z(t) = 0",
+              "start_point": [0, 1, 0],
+              "end_point": [1, 0, 0]
+            },
+            "function": "f(x, y, z) = x + y",
+            "limits": [0, 1],
+            "solution": "sqrt(2)"
+          },
+          {
+            "id": 2,
+            "problem_statement": "Evaluate f(x,y,z) = (x - y + z - 2) ds where C is the straight-line segment x = t, y = 1 - t, z = 1, from (0, 1, 1) to (1, 0, 1).",
+            "curve": {
+              "parametric_equations": "x(t) = t, y(t) = 1 - t, z(t) = 1",
+              "start_point": [0, 1, 1],
+              "end_point": [1, 0, 1]
+            },
+            "function": "f(x, y, z) = x - y + z - 2",
+            "limits": [0, 1],
+            "solution": "-sqrt(2)"
+          },
+          {
+            "id": 3,
+            "problem_statement": "Evaluate f(x,y,z) = (xy + y + z) ds along the curve r(t) = (2t, t, 2 - 2t), (0, 0, 2) to (2, 1, 0)",
+            "curve": {
+              "parametric_equations": "x(t) = 2t, y(t) = t, z(t) = 2 - 2t",
+              "start_point": [0, 0, 2],
+              "end_point": [2, 1, 0]
+            },
+            "function": "f(x, y, z) = xy + y + z",
+            "limits": [0, 1],
+            "solution": "13/2"
+          },
+          {
+            "id": 4,
+            "problem_statement": "Find the line integral of f(x, y, z) = x + y + z over the straight-line segment from (1, 2, 3) to (0, -1, 1).",
+            "curve": {
+              "parametric_equations": "x(t) = 1 - t, y(t) = 2 - 3t, z(t) = 3 - 2t",
+              "start_point": [1, 2, 3],
+              "end_point": [0, -1, 1]
+            },
+            "function": "f(x, y, z) = x + y + z",
+            "limits": [0, 1],
+            "solution": "3*sqrt(14)"
+          },
+          {
+              "id": 5,
+              "problem_statement": "Evaluate f(x,y) = x ds, where C is the straight-line segment x = t, y = t/2, from (0, 0) to (4, 2).",
+              "curve": {
+                  "parametric_equations": "x(t) = t, y(t) = t/2, 0 ≤ t ≤ 4",
+                  "start_point": [0, 0],
+                  "end_point": [4, 2]
+              },
+              "function": "f(x, y) = x",
+              "limits": [0, 4],
+              "solution": "4*sqrt(5)"
+          },
+          {
+              "id": 6,
+              "problem_statement": "Evaluate f(x,y) = sqrt(x + 2*y) ds, where C is the straight-line segment x = t, y = 4t, from (0, 0) to (1, 4).",
+              "curve": {
+                  "parametric_equations": "x(t) = t, y(t) = 4t, 0 ≤ t ≤ 1",
+                  "start_point": [0, 0],
+                  "end_point": [1, 4]
+              },
+              "function": "f(x, y) = sqrt(x + 2*y)",
+              "limits": [0, 1],
+              "solution": "2*sqrt(17)"
+          },
+          {
+              "id": 7,
+              "problem_statement": "Evaluate f(x,y) = (3x + 2y) ds where C is the straight-line segment from (0,0) to (4,3).",
+              "curve": {
+                "parametric_equations": "x(t) = 4t, y(t) = 3t, 0 ≤ t ≤ 1",
+                "start_point": [0, 0],
+                "end_point": [4, 3]
+              },
+              "function": "f(x, y) = 3x + 2y",
+              "limits": [0, 1],
+              "solution": "15"
+          },
+          {
+              "id": 8,
+              "problem_statement": "Evaluate f(x, y, z) = (2x + z) ds where C is the line segment from (1,0,1) to (3,2,4).",
+              "curve": {
+                  "parametric_equations": "x(t) = 1 + 2t, y(t) = 2t, z(t) = 1 + 3t, 0 ≤ t ≤ 1",
+                  "start_point": [1, 0, 1],
+                  "end_point": [3, 2, 4]
+              },
+              "function": "f(x, y, z) = 2x + z",
+              "limits": [0, 1],
+              "solution": "7*sqrt(17)"
+          },
+          {
+              "id": 9,
+              "problem_statement": "Evaluate f(x, y) = xy ds where C is the quarter-circle x² + y² = 9 in the first quadrant.",
+              "curve": {
+                  "parametric_equations": "x(t) = 3cos(t), y(t) = 3sin(t), 0 ≤ t ≤ π/2",
+                  "start_point": [3, 0],
+                  "end_point": [0, 3]
+              },
+              "function": "f(x, y) = xy",
+              "limits": [0, "π/2"],
+              "solution": "27/2"
+          },
+          {
+              "id": 10,
+              "problem_statement": "Evaluate f(x, y) = (x + 2y) ds where C is the parabolic path y = x² from (0,0) to (1,1).",
+              "curve": {
+                  "parametric_equations": "x(t) = t, y(t) = t², 0 ≤ t ≤ 1",
+                  "start_point": [0, 0],
+                  "end_point": [1, 1]
+              },
+              "function": "f(x, y) = x + 2y",
+              "limits": [0, 1],
+              "solution": "1.015"
+          },
+          {
+              "id": 11,
+              "problem_statement": "Evaluate f(x, y, z) = (x + y - z) ds where C is the line segment from (1,1,1) to (2,3,4).",
+              "curve": {
+                  "parametric_equations": "x(t) = 1 + t, y(t) = 1 + 2t, z(t) = 1 + 3t, 0 ≤ t ≤ 1",
+                  "start_point": [1, 1, 1],
+                  "end_point": [2, 3, 4]
+              },
+              "function": "f(x, y, z) = x + y - z",
+              "limits": [0, 1],
+              "solution": "sqrt(14)"
+          },
+          {
+              "id": 12,
+              "problem_statement": "Evaluate f(x, y) = (x² + y) ds where C is the straight-line segment from (-1,1) to (2,4).",
+              "curve": {
+                  "parametric_equations": "x(t) = -1 + 3t, y(t) = 1 + 3t, 0 ≤ t ≤ 1",
+                  "start_point": [-1, 1],
+                  "end_point": [2, 4]
+              },
+              "function": "f(x, y) = x² + y",
+              "limits": [0, 1],
+              "solution": "21.2132"
+          },
+          {
+              "id": 13,
+              "problem_statement": "Evaluate f(x, y) = (2x - y) ds where C is the semicircle x² + y² = 4, y ≥ 0.",
+              "curve": {
+                  "parametric_equations": "x(t) = 2cos(t), y(t) = 2sin(t), 0 ≤ t ≤ π",
+                  "start_point": [2, 0],
+                  "end_point": [-2, 0]
+              },
+              "function": "f(x, y) = 2x - y",
+              "limits": [0, "π"],
+              "solution": "0.0"
+          },
+          {
+              "id": 14,
+              "problem_statement": "Evaluate f(x, y, z) = (x + z) ds where C is the helix r(t) = (cos(t), sin(t), t), 0 ≤ t ≤ 2π.",
+              "curve": {
+                  "parametric_equations": "x(t) = cos(t), y(t) = sin(t), z(t) = t, 0 ≤ t ≤ 2π",
+                  "start_point": [1, 0, 0],
+                  "end_point": [1, 0, "2π"]
+              },
+              "function": "f(x, y, z) = x + z",
+              "limits": [0, "2π"],
+              "solution": "2*sqrt(2)*π²"
+          },
+          {
+              "id": 15,
+              "problem_statement": "Evaluate f(x, y) = (x + y²) ds where C is the straight-line segment from (0,0) to (2,6).",
+              "curve": {
+                  "parametric_equations": "x(t) = 2t, y(t) = 6t, 0 ≤ t ≤ 1",
+                  "start_point": [0, 0],
+                  "end_point": [2, 6]
+              },
+              "function": "f(x, y) = x + y²",
+              "limits": [0, 1],
+              "solution": "74*sqrt(10)/3"
+          },
+          {
+              "id": 16,
+              "problem_statement": "Evaluate f(x, y) = (3x² + 2y) ds where C is the curve y = x³ from (0,0) to (1,1).",
+              "curve": {
+                  "parametric_equations": "x(t) = t, y(t) = t³, 0 ≤ t ≤ 1",
+                  "start_point": [0, 0],
+                  "end_point": [1, 1]
+              },
+              "function": "f(x, y) = 3x² + 2y",
+              "limits": [0, 1],
+              "solution": "(5*sqrt(10) + 1)/12"
+          },
+          {
+              "id": 17,
+              "problem_statement": "Evaluate f(x, y, z) = (y + z) ds where C is the line segment from (0,0,0) to (1,2,3).",
+              "curve": {
+                  "parametric_equations": "x(t) = t, y(t) = 2t, z(t) = 3t, 0 ≤ t ≤ 1",
+                  "start_point": [0, 0, 0],
+                  "end_point": [1, 2, 3]
+              },
+              "function": "f(x, y, z) = y + z",
+              "limits": [0, 1],
+              "solution": "5*sqrt(14)/2"
+          },
+          {
+              "id": 18,
+              "problem_statement": "Evaluate f(x, y) = (x² + y²) ds where C is the quarter-circle x² + y² = 16 in the first quadrant.",
+              "curve": {
+                  "parametric_equations": "x(t) = 4cos(t), y(t) = 4sin(t), 0 ≤ t ≤ π/2",
+                  "start_point": [4, 0],
+                  "end_point": [0, 4]
+              },
+              "function": "f(x, y) = x² + y²",
+              "limits": [0, "π/2"],
+              "solution": "32π"
+          },
+          {
+              "id": 19,
+              "problem_statement": "Evaluate f(x, y) = (x - 2y) ds where C is the straight-line segment from (1,2) to (3,5).",
+              "curve": {
+                  "parametric_equations": "x(t) = 1 + 2t, y(t) = 2 + 3t, 0 ≤ t ≤ 1",
+                  "start_point": [1, 2],
+                  "end_point": [3, 5]
+              },
+              "function": "f(x, y) = x - 2y",
+              "limits": [0, 1],
+              "solution": "-7*sqrt(13)"
+          },
+          {
+              "id": 20,
+              "problem_statement": "Evaluate f(x, y, z) = (2x + 3y - z) ds where C is the line segment from (0,0,0) to (1,1,1).",
+              "curve": {
+                  "parametric_equations": "x(t) = t, y(t) = t, z(t) = t, 0 ≤ t ≤ 1",
+                  "start_point": [0, 0, 0],
+                  "end_point": [1, 1, 1]
+              },
+              "function": "f(x, y, z) = 2x + 3y - z",
+              "limits": [0, 1],
+              "solution": "4*sqrt(3)/3"
+          }
+        ]     
+}
+

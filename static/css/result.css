@@ -1,0 +1,128 @@
+/* Base solution box styling */
+.solution-box {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px var(--shadow);
+    max-width: 800px;
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    border-left: 4px solid var(--primary);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Error state styling */
+.error-box {
+    background: var(--card-bg);
+    border-left: 4px solid var(--error);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px var(--shadow);
+    max-width: 800px;
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Result section styling */
+.result-section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--bg-dark);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+/* Main result value styling */
+.result-value {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Error message styling */
+.error-message {
+    font-size: 1.5rem;
+    color: var(--error);
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Computed result styling (shown in error cases) */
+.computed-result {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.computed-result p {
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Action buttons */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.back-button, .home-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: var(--primary);
+    color: var(--text-primary);
+}
+
+.home-button {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--primary);
+}
+
+.back-button:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.home-button:hover {
+    background-color: var(--bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .solution-box, .error-box {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .back-button, .home-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,94 @@
+{
+  "problems": [
+      {
+          "id": 1,
+          "problem_statement": "Calculate the flux of the vector field F = 2x*i - 3y*j across the unit circle centered at the origin",
+          "vector_field": "2x*i - 3y*j",
+          "curve": "r(t) = [a*cos(t), a*sin(t)], 0 ≤ t ≤ 2π",
+          "type": "circle",
+          "params": {"a": 1},
+          "solution": 0
+      },
+      {
+          "id": 2,
+          "problem_statement": "Find the outward flux of F = 2x*i + (x - y)*j through the boundary of the unit circle",
+          "vector_field": "2x*i + (x - y)*j",
+          "curve": "r(t) = [a*cos(t), a*sin(t)], 0 ≤ t ≤ 2π",
+          "type": "circle",
+          "params": {"a": 1},
+          "solution": 0
+      },
+      {
+          "id": 3,
+          "problem_statement": "Compute the flux of F = x*i + y*j across the closed path consisting of the upper semicircle of radius 1 and the line segment along the x-axis from (-1,0) to (1,0)",
+          "vector_field": "x*i + y*j",
+          "curve": "Semicircle r1(t) = [a*cos(t), a*sin(t)], 0 ≤ t ≤ π, followed by line r2(t) = [t, 0], -a ≤ t ≤ a",
+          "type": "semicircle_with_line",
+          "params": {"a": 1},
+          "solution": 0
+      },
+      {
+          "id": 4,
+          "problem_statement": "Determine the flux of F = x²*i + y²*j through the boundary formed by the upper semicircle of radius 1 and the diameter along the x-axis",
+          "vector_field": "x^2*i + y^2*j",
+          "curve": "Semicircle r1(t) = [a*cos(t), a*sin(t)], 0 ≤ t ≤ π, followed by line r2(t) = [t, 0], -a ≤ t ≤ a",
+          "type": "semicircle_with_line",
+          "params": {"a": 1},
+          "solution": "π/2"
+      },
+      {
+          "id": 5,
+          "problem_statement": "Calculate the flux of F = -y*i + x*j across the closed path consisting of the upper semicircle of radius a and the line segment from (-a,0) to (a,0)",
+          "vector_field": "-y*i + x*j",
+          "curve": "Semicircle r1(t) = [a*cos(t), a*sin(t)], 0 ≤ t ≤ π, followed by line r2(t) = [t, 0], -a ≤ t ≤ a",
+          "type": "semicircle_with_line",
+          "params": {"a": 1},
+          "solution": "πa^2"
+      },
+      {
+          "id": 6,
+          "problem_statement": "Find the flux of F = -y²*i + x²*j through the boundary formed by the upper semicircle of radius a and its diameter",
+          "vector_field": "-y^2*i + x^2*j",
+          "curve": "Semicircle r1(t) = [a*cos(t), a*sin(t)], 0 ≤ t ≤ π, followed by line r2(t) = [t, 0], -a ≤ t ≤ a",
+          "type": "semicircle_with_line",
+          "params": {"a": 1},
+          "solution": "3πa^4/4"
+      },
+      {
+          "id": 7,
+          "problem_statement": "Compute the outward flux of F = (x - y)*i + x*j across the unit circle centered at the origin",
+          "vector_field": "(x - y)*i + x*j",
+          "curve": "Circle x^2 + y^2 = 1",
+          "type": "circle",
+          "params": {"a": 1},
+          "solution": "π"
+      },
+      {
+          "id": 8,
+          "problem_statement": "Determine the flux of F = (x + y)*i - (x² + y²)*j across the triangular path with vertices at (1,0), (0,1), and (-1,0)",
+          "vector_field": "(x + y)*i - (x^2 + y^2)*j",
+          "curve": "Triangle with vertices (1,0), (0,1), (-1,0)",
+          "type": "triangle",
+          "params": {},
+          "solution": "-2/3"
+      },
+      {
+          "id": 9,
+          "problem_statement": "Calculate the flux of F = y*i - x*j across the circle of radius 2 centered at the origin",
+          "vector_field": "y*i - x*j",
+          "curve": "Circle r(t) = [2*cos(t), 2*sin(t)], 0 ≤ t ≤ 2π",
+          "type": "circle",
+          "params": {"a": 2},
+          "solution": "-8π"
+      },
+      {
+          "id": 10,
+          "problem_statement": "Find the flux of F = eˣ*i + ln(y+1)*j across the closed path consisting of the upper semicircle of radius 3 and the line segment from (-3,0) to (3,0)",
+          "vector_field": "e^x*i + ln(y+1)*j",
+          "curve": "Semicircle r1(t) = [3*cos(t), 3*sin(t)], 0 ≤ t ≤ π, followed by line r2(t) = [t, 0], -3 ≤ t ≤ 3",
+          "type": "semicircle_with_line",
+          "params": {"a": 3},
+          "solution": "Numerical (requires evaluation)"
+      }
+  ]
+}

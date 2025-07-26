@@ -1,0 +1,132 @@
+/* Main content styling */
+.main-content {
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.main-content h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* Problem form styling */
+.problem-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px var(--shadow);
+    border: 1px solid var(--border);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    background: var(--bg-dark);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.5;
+}
+
+/* Form actions */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.solve-button, .back-button {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.solve-button {
+    background-color: var(--primary);
+    color: var(--text-primary);
+}
+
+.back-button {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--primary);
+}
+
+.solve-button:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.back-button:hover {
+    background-color: var(--bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .problem-form {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .solve-button, .back-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .main-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}

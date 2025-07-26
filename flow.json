@@ -1,0 +1,112 @@
+{
+  "problems": [
+    {
+      "id": 1,
+      "problem_statement": "Calculate the flow of F = (x+y)i + (x²+y²)j along the semicircle r(t) = (cos t)i + (sin t)j, t ∈ [0, π]",
+      "vector_field": "(x+y)i + (x²+y²)j",
+      "path": {
+        "type": "semicircle",
+        "equation": "r(t) = (cos t)i + (sin t)j",
+        "interval": [0, 3.14159]
+      },
+      "solution": "-1.5708"
+    },
+    {
+      "id": 2,
+      "problem_statement": "Find the flow of F = (x+y)i + (x²+y²)j along the line segment from (1,0) to (-1,0)",
+      "vector_field": "(x+y)i + (x²+y²)j",
+      "path": {
+        "type": "line_segment",
+        "points": [[1, 0], [-1, 0]]
+      },
+      "solution": "0"
+    },
+    {
+      "id": 3,
+      "problem_statement": "Compute the flow of F = zi + xj + yk along the helix r(t) = (sin t)i + (cos t)j + tk, t ∈ [0, 2π]",
+      "vector_field": "zi + xj + yk",
+      "path": {
+        "type": "3d_helix",
+        "equation": "r(t) = (sin t)i + (cos t)j + tk",
+        "interval": [0, 6.28319]
+      },
+      "solution": "-3.14159"
+    },
+    {
+      "id": 4,
+      "problem_statement": "Determine the flow of F = 6xi + y²j + 12zk along r(t) = (sin t)i + (cos t)j + (t/6)k, t ∈ [0, 2π]",
+      "vector_field": "6xi + y²j + 12zk",
+      "path": {
+        "type": "3d_curve",
+        "equation": "r(t) = (sin t)i + (cos t)j + (t/6)k",
+        "interval": [0, 6.28319]
+      },
+      "solution": "0"
+    },
+    {
+      "id": 5,
+      "problem_statement": "Measure the flow of F = 2yi + 3xj + (x+y)k along r(t) = (cos t)i + (sin t)j + (t/6)k, t ∈ [0, 2π]",
+      "vector_field": "2yi + 3xj + (x+y)k",
+      "path": {
+        "type": "3d_helix",
+        "equation": "r(t) = (cos t)i + (sin t)j + (t/6)k",
+        "interval": [0, 6.28319]
+      },
+      "solution": "3.14159"
+    },
+    {
+      "id": 6,
+      "problem_statement": "Calculate the flow of F = xyi + yj - yzk along the parabolic path r(t) = ti + t²j + tk, t ∈ [0, 1]",
+      "vector_field": "xyi + yj - yzk",
+      "path": {
+        "type": "3d_parabola",
+        "equation": "r(t) = ti + t²j + tk",
+        "interval": [0, 1]
+      },
+      "solution": "0.5"
+    },
+    {
+      "id": 7,
+      "problem_statement": "Find the flow of F = 0.3x²i - 0.3yj along the circular path r(t) = (cos t)i + (sin t)j, t ∈ [0, 2π]",
+      "vector_field": "0.3x²i - 0.3yj",
+      "path": {
+        "type": "circle",
+        "equation": "r(t) = (cos t)i + (sin t)j",
+        "interval": [0, 6.28319]
+      },
+      "solution": "0"
+    },
+    {
+      "id": 8,
+      "problem_statement": "Compute the flow of F = -0.001xi + 0.001y²j along r(t) = (-sin t)i + (cos t)j, t ∈ [0, 2π]",
+      "vector_field": "-0.001xi + 0.001y²j",
+      "path": {
+        "type": "circle",
+        "equation": "r(t) = (-sin t)i + (cos t)j",
+        "interval": [0, 6.28319]
+      },
+      "solution": "0"
+    },
+    {
+      "id": 9,
+      "problem_statement": "Determine the flow of F = y²i - xj along the parabola y = x² from (-1,1) to (2,4)",
+      "vector_field": "y²i - xj",
+      "path": {
+        "type": "parabola",
+        "equation": "y = x²",
+        "points": [[-1, 1], [2, 4]]
+      },
+      "solution": "-6.6"
+    },
+    {
+      "id": 10,
+      "problem_statement": "Measure the flow of F = (x+y+z)i + (x-y)j + zk along the straight line from (0,0,0) to (1,1,1)",
+      "vector_field": "(x+y+z)i + (x-y)j + zk",
+      "path": {
+        "type": "3d_line",
+        "points": [[0, 0, 0], [1, 1, 1]]
+      },
+      "solution": "1.5"
+    }
+  ]
+}

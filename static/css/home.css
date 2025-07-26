@@ -1,0 +1,159 @@
+/* Main content styling */
+.main-content {
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.main-content h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* Operations grid - 3 rows layout */
+.operations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+    margin: 3rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Make the 7th card span only 1 column in the 3rd row */
+.operation-card:nth-child(7) {
+    grid-column: 2;
+}
+
+/* Operation card styling */
+.operation-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--shadow);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card hover effects */
+.operation-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px var(--shadow-hover);
+    border-color: var(--primary-light);
+}
+
+.operation-card:active {
+    transform: translateY(-4px) scale(1.01);
+}
+
+/* Card content styling */
+.operation-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.operation-card .math-symbol {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+/* Staggered animation for cards */
+.operation-card:nth-child(1) { animation: fadeInUp 0.6s ease-out 0.1s both; }
+.operation-card:nth-child(2) { animation: fadeInUp 0.6s ease-out 0.2s both; }
+.operation-card:nth-child(3) { animation: fadeInUp 0.6s ease-out 0.3s both; }
+.operation-card:nth-child(4) { animation: fadeInUp 0.6s ease-out 0.4s both; }
+.operation-card:nth-child(5) { animation: fadeInUp 0.6s ease-out 0.5s both; }
+.operation-card:nth-child(6) { animation: fadeInUp 0.6s ease-out 0.6s both; }
+.operation-card:nth-child(7) { animation: fadeInUp 0.6s ease-out 0.7s both; }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .operations-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .operation-card:nth-child(7) {
+        grid-column: 1;
+    }
+    
+    .operation-card {
+        padding: 1.5rem 1rem;
+        min-height: 120px;
+    }
+    
+    .operation-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .operation-card .math-symbol {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .operations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .operation-card:nth-child(7) {
+        grid-column: 1;
+    }
+}
+
+/* Header animation */
+.header {
+    animation: fadeInUp 0.8s ease-out;
+    margin-bottom: 1rem;
+}
+
+.header h1 {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.header .subtitle {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+/* Focus states for accessibility */
+.operation-card:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* Button reset for form buttons - preserve left border */
+.operation-card {
+    background: none;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    width: 100%;
+}

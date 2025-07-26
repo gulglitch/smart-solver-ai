@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectorly - Vector Calculus Solver</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body class="home">
+    <div class="container">
+        <header class="header">
+            <h1>Vectorly</h1>
+            <p class="subtitle">Advanced Vector Calculus Solver</p>
+        </header>
+
+        <main class="main-content">
+            <h2>Select Operation Type</h2>
+            <form method="post" action="/solve" class="operations-grid">
+                <button type="submit" name="operation" value="Line Integral" class="operation-card">
+                    <h3>Line Integral</h3>
+                    <span class="math-symbol">∫ F · dr</span>
+                </button>
+
+                <button type="submit" name="operation" value="Flux" class="operation-card">
+                    <h3>Flux</h3>
+                    <span class="math-symbol">∬ F · dS</span>
+                </button>
+
+                <button type="submit" name="operation" value="Flow" class="operation-card">
+                    <h3>Flow</h3>
+                    <span class="math-symbol">∬ F · n dS</span>
+                </button>
+
+                <button type="submit" name="operation" value="Circulation" class="operation-card">
+                    <h3>Circulation</h3>
+                    <span class="math-symbol">∮ F · dr</span>
+                </button>
+
+                <button type="submit" name="operation" value="Work Integral" class="operation-card">
+                    <h3>Work Integral</h3>
+                    <span class="math-symbol">W = ∫ F · dr</span>
+                </button>
+
+                <button type="submit" name="operation" value="Conservativity Check" class="operation-card">
+                    <h3>Conservativity Check</h3>
+                    <span class="math-symbol">∇ × F = 0</span>
+                </button>
+
+                <button type="submit" name="operation" value="Potential Function" class="operation-card">
+                    <h3>Potential Function</h3>
+                    <span class="math-symbol">F = ∇φ</span>
+                </button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+{
+  "problems": [
+    {
+      "id": 1,
+      "problem_statement": "Find a potential function for the field F = 2xi + 3yj + 4zk",
+      "vector_field": {
+        "i": "2*x",
+        "j": "3*y",
+        "k": "4*z"
+      },
+      "solution": "f(x,y,z) = x^2 + (3/2)y^2 + 2z^2 + C"
+    },
+    {
+      "id": 2,
+      "problem_statement": "Find a potential function for the field F = (y + z)i + (x + z)j + (x + y)k",
+      "vector_field": {
+        "i": "y + z",
+        "j": "x + z",
+        "k": "x + y"
+      },
+      "solution": "f(x,y,z) = x*y + x*z + y*z + C"
+    },
+    {
+      "id": 3,
+      "problem_statement": "Find a potential function for the field F = e^(x+2z)(i + xj + 2zk)",
+      "vector_field": {
+        "i": "e^(x+2*z)",
+        "j": "x*e^(x+2*z)",
+        "k": "2*e^(x+2*z)"
+      },
+      "solution": "f(x,y,z) = e^(x+2*z) + C"
+    },
+    {
+      "id": 4,
+      "problem_statement": "Find a potential function for the field F = (y sin z)i + (x sin z)j + (xy cos z)k",
+      "vector_field": {
+        "i": "y*sin(z)",
+        "j": "x*sin(z)",
+        "k": "x*y*cos(z)"
+      },
+      "solution": "f(x,y,z) = x*y*sin(z) + C"
+    },
+    {
+      "id": 5,
+      "problem_statement": "Find a potential function for the field F = (yz)i + (xz)j + (xy)k",
+      "vector_field": {
+        "i": "y*z",
+        "j": "x*z",
+        "k": "x*y"
+      },
+      "solution": "f(x,y,z) = x*y*z + C"
+    },
+    {
+      "id": 6,
+      "problem_statement": "Find a potential function for the field F = (y sin z)i + (x sin z)j + (xy cos z)k",
+      "vector_field": {
+        "i": "y*sin(z)",
+        "j": "x*sin(z)",
+        "k": "x*y*cos(z)"
+      },
+      "solution": "f(x,y,z) = x*y*sin(z) + C"
+    },
+    {
+      "id": 7,
+      "problem_statement": "Find a potential function for the field F = (e^x cos y)i - (e^x sin y)j + zk",
+      "vector_field": {
+        "i": "e^x*cos(y)",
+        "j": "-e^x*sin(y)",
+        "k": "z"
+      },
+      "solution": "f(x,y,z) = e^x*cos(y) + (1/2)*z^2 + C"
+    },
+    {
+      "id": 8,
+      "problem_statement": "Find a potential function for the field F = (2x + y)i + (x + 3y)j",
+      "vector_field": {
+        "i": "2*x + y",
+        "j": "x + 3*y",
+        "k": "0"
+      },
+      "solution": "f(x,y,z) = x^2 + x*y + (3/2)*y^2 + C"
+    },
+    {
+      "id": 9,
+      "problem_statement": "Find a potential function for the field F = (cos x)i + (sin y)j + (cos z)k",
+      "vector_field": {
+        "i": "cos(x)",
+        "j": "sin(y)",
+        "k": "cos(z)"
+      },
+      "solution": "f(x,y,z) = sin(x) - cos(y) + sin(z) + C"
+    },
+    {
+      "id": 10,
+      "problem_statement": "Find a potential function for the field F = (2xz)i + (2yz)j + (x² + y²)k",
+      "vector_field": {
+        "i": "2*x*z",
+        "j": "2*y*z",
+        "k": "x^2 + y^2"
+      },
+      "solution": "f(x,y,z) = x^2*z + y^2*z + C"
+    },
+    {
+      "id": 11,
+      "problem_statement": "Find a potential function for the field F = (y)i + (x)j",
+      "vector_field": {
+        "i": "y",
+        "j": "x",
+        "k": "0"
+      },
+      "solution": "f(x,y,z) = x*y + C"
+    },
+    {
+      "id": 12,
+      "problem_statement": "Find a potential function for the field F = (2x)i + (2y)j + (2z)k",
+      "vector_field": {
+        "i": "2*x",
+        "j": "2*y",
+        "k": "2*z"
+      },
+      "solution": "f(x,y,z) = x^2 + y^2 + z^2 + C"
+    },
+    {
+      "id": 13,
+      "problem_statement": "Find a potential function for the field F = (e^x)i + (2y)j + (3z²)k",
+      "vector_field": {
+        "i": "e^x",
+        "j": "2*y",
+        "k": "3*z^2"
+      },
+      "solution": "f(x,y,z) = e^x + y^2 + z^3 + C"
+    },
+    {
+      "id": 14,
+      "problem_statement": "Find a potential function for the field F = (z)i + (0)j + (x)k",
+      "vector_field": {
+        "i": "z",
+        "j": "0",
+        "k": "x"
+      },
+      "solution": "No potential function exists (field is not conservative)"
+    },
+    {
+      "id": 15,
+      "problem_statement": "Find a potential function for the field F = (y)i + (-x)j",
+      "vector_field": {
+        "i": "y",
+        "j": "-x",
+        "k": "0"
+      },
+      "solution": "No potential function exists (field is not conservative)"
+    },
+    {
+      "id": 16,
+      "problem_statement": "Find a potential function for the field F = (2x + y)i + (x + 3y)j + (0)k",
+      "vector_field": {
+        "i": "2*x + y",
+        "j": "x + 3*y",
+        "k": "0"
+      },
+      "solution": "f(x,y,z) = x^2 + x*y + (3/2)*y^2 + C"
+    },
+    {
+      "id": 17,
+      "problem_statement": "Find a potential function for the field F = (y)i + (0)j + (x)k",
+      "vector_field": {
+        "i": "y",
+        "j": "0",
+        "k": "x"
+      },
+      "solution": "No potential function exists (field is not conservative)"
+    },
+    {
+      "id": 18,
+      "problem_statement": "Find a potential function for the field F = (y*z²)i + (x*z²)j + (x*y)k",
+      "vector_field": {
+        "i": "y*z^2",
+        "j": "x*z^2",
+        "k": "x*y"
+      },
+      "solution": "f(x,y,z) = x*y*z^2 + C"
+    },
+    {
+      "id": 19,
+      "problem_statement": "Find a potential function for the field F = (2x cos y)i - (x² sin y)j + e^z k",
+      "vector_field": {
+        "i": "2*x*cos(y)",
+        "j": "-x^2*sin(y)",
+        "k": "e^z"
+      },
+      "solution": "f(x,y,z) = x^2*cos(y) + e^z + C"
+    },
+    {
+      "id": 20,
+      "problem_statement": "Find a potential function for the field F = (1 + y + z)i + (x + z)j + (x + y)k",
+      "vector_field": {
+        "i": "1 + y + z",
+        "j": "x + z",
+        "k": "x + y"
+      },
+      "solution": "f(x,y,z) = x + x*y + x*z + y*z + C"
+    }
+  ]
+}

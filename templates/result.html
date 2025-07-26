@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result | Vectorly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body class="result">
+    <div class="container">
+        <header class="header">
+            <h1>Vectorly</h1>
+            <p class="subtitle">Solution for: {{ operation }}</p>
+        </header>
+        <main class="main-content">
+            {% if error %}
+                <div class="solution-box error-box">
+                    <div class="result-section">
+                        <p class="error-message">
+                            <strong>Question is beyond my scope.</strong>
+                        </p>
+                        {% if computed_result %}
+                        <div class="computed-result">
+                            <p>Result: {{ computed_result }}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="actions">
+                        <a href="/solve?operation={{ operation|urlencode }}" class="back-button">
+                            Try Another {{ operation }}
+                        </a>
+                        <a href="/" class="home-button">Home</a>
+                    </div>
+                </div>
+            {% else %}
+                <div class="solution-box">
+                    {% if operation == "Conservativity Check" %}
+                        <div class="result-section">
+                            <p class="result-value">
+                                {{ "✓ Conservative" if result == True else "✗ Not conservative" }}
+                            </p>
+                        </div>
+                    {% elif operation == "Potential Function" %}
+                        <div class="result-section">
+                            {% if result is none or result == 'N/A' %}
+                                <p class="result-value">No potential function exists (The field is not conservative) </p>
+                            {% else %}
+                                <p class="result-value">φ(x,y,z) = {{ result }}</p>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <div class="result-section">
+                            <p class="result-value">
+                                Result: {{ result }}
+                            </p>
+                        </div>
+                    {% endif %}
+
+                    <div class="actions">
+                        <a href="/solve?operation={{ operation|urlencode }}" class="back-button">
+                            Solve Another {{ operation }}
+                        </a>
+                        <a href="/" class="home-button">Home</a>
+                    </div>
+                </div>
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>

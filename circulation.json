@@ -1,0 +1,88 @@
+[
+    {
+        "id": 0,
+        "question": "Find the circulation of F = yi - xj around the unit circle r(t) = (cos t)i + (sin t)j, 0 ≤ t ≤ 2π.",
+        "vector_field": "F = yi - xj",
+        "curve": "r(t) = (cos t)i + (sin t)j",
+        "interval": "0 ≤ t ≤ 2π",
+        "solution": -6.28319,
+        "solution_explanation": "Circulation is the line integral of F·dr around the closed loop. For this conservative field, it equals -2π."
+    },
+    {
+        "id": 1,
+        "question": "Find the circulation of F = xi + yj around the square with vertices at (0,0), (1,0), (1,1), (0,1).",
+        "vector_field": "F = xi + yj",
+        "curve": "Square with vertices (0,0), (1,0), (1,1), (0,1)",
+        "solution": 0,
+        "solution_explanation": "The circulation is zero because F is a conservative field and the path is closed."
+    },
+    {
+        "id": 2,
+        "question": "Find the circulation of F = -yi + xj around the circle r(t) = (2cos t)i + (2sin t)j, 0 ≤ t ≤ 2π.",
+        "vector_field": "F = -yi + xj",
+        "curve": "r(t) = (2cos t)i + (2sin t)j",
+        "interval": "0 ≤ t ≤ 2π",
+        "solution": 25.1327,
+        "solution_explanation": "Circulation equals 8π because for this field, it's 2π times the radius squared (2²=4)."
+    },
+    {
+        "id": 3,
+        "question": "Find the circulation of F = 2i + 3j around the triangle with vertices (0,0), (1,0), (0,1).",
+        "vector_field": "F = 2i + 3j",
+        "curve": "Triangle with vertices (0,0), (1,0), (0,1)",
+        "solution": 0,
+        "solution_explanation": "Circulation is zero because F is a constant field and the integral around any closed path is zero."
+    },
+    {
+        "id": 4,
+        "question": "Find the circulation of F = x²i + y²j around the unit square (0,0) to (1,0) to (1,1) to (0,1) to (0,0).",
+        "vector_field": "F = x²i + y²j",
+        "curve": "Unit square",
+        "solution": 0,
+        "solution_explanation": "The circulation is zero because the x-component depends only on x and y-component only on y, making the integral cancel out around the closed path."
+    },
+    {
+        "id": 5,
+        "question": "Find the circulation of F = (x + y)i + (x - y)j around the circle r(t) = (cos t)i + (sin t)j, 0 ≤ t ≤ 2π.",
+        "vector_field": "F = (x + y)i + (x - y)j",
+        "curve": "r(t) = (cos t)i + (sin t)j",
+        "interval": "0 ≤ t ≤ 2π",
+        "solution": -6.28319,
+        "solution_explanation": "The circulation is -2π, coming from the non-conservative part of the field."
+    },
+    {
+        "id": 6,
+        "question": "Find the circulation of F = 3yi + 2xj around the ellipse r(t) = (2cos t)i + (sin t)j, 0 ≤ t ≤ 2π.",
+        "vector_field": "F = 3yi + 2xj",
+        "curve": "r(t) = (2cos t)i + (sin t)j",
+        "interval": "0 ≤ t ≤ 2π",
+        "solution": -6.28319,
+        "solution_explanation": "Circulation is -2π, calculated using Green's theorem for the area enclosed by the ellipse."
+    },
+    {
+        "id": 7,
+        "question": "Find the circulation of F = (y - x)i + (x + y)j around the right half-circle r(t) = (cos t)i + (sin t)j, -π/2 ≤ t ≤ π/2 plus the diameter segment.",
+        "vector_field": "F = (y - x)i + (x + y)j",
+        "curve": "Right half-circle with diameter",
+        "interval": "-π/2 ≤ t ≤ π/2",
+        "solution": 3.14159,
+        "solution_explanation": "The circulation is π, with contribution only from the circular part as the line integral along the diameter cancels out."
+    },
+    {
+        "id": 8,
+        "question": "Find the circulation of F = -y³i + x³j around the unit circle r(t) = (cos t)i + (sin t)j, 0 ≤ t ≤ 2π.",
+        "vector_field": "F = -y³i + x³j",
+        "curve": "r(t) = (cos t)i + (sin t)j",
+        "interval": "0 ≤ t ≤ 2π",
+        "solution": 4.71239,
+        "solution_explanation": "Circulation is 3π/2, calculated using polar coordinates and symmetry considerations."
+    },
+    {
+        "id": 9,
+        "question": "Find the circulation of F = (x² - y)i + (y² + x)j around the triangle with vertices (0,0), (1,0), (0,1).",
+        "vector_field": "F = (x² - y)i + (y² + x)j",
+        "curve": "Triangle with vertices (0,0), (1,0), (0,1)",
+        "solution": 1,
+        "solution_explanation": "Circulation is 1, calculated by integrating along each side of the triangle and summing the results."
+    }
+]

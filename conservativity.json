@@ -1,0 +1,125 @@
+{
+    "problems": [
+      {
+        "id": 1,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y*z, x*z, x*y) is conservative.",
+        "function": { "i": "y*z", "j": "x*z", "k": "x*y" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 2,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y*sin(z), x*sin(z), x*y*cos(z)) is conservative.",
+        "function": { "i": "y*sin(z)", "j": "x*sin(z)", "k": "x*y*cos(z)" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 3,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y, x + z, -y) is conservative.",
+        "function": { "i": "y", "j": "x + z", "k": "-y" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 4,
+        "problem_statement": "Test if the vector field F(x, y, z) = (-y, x, 0) is conservative.",
+        "function": { "i": "-y", "j": "x", "k": "0" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 5,
+        "problem_statement": "Test if the vector field F(x, y, z) = (x + y, z, y + x) is conservative.",
+        "function": { "i": "x + y", "j": "z", "k": "y + x" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 6,
+        "problem_statement": "Test if the vector field F(x, y, z) = (e^x * cos(y), -e^x * sin(y), z) is conservative.",
+        "function": { "i": "e^x * cos(y)", "j": "-e^x * sin(y)", "k": "z" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 7,
+        "problem_statement": "Test if the vector field F(x, y, z) = (2xy, x^2 + 2z, 2y) is conservative.",
+        "function": { "i": "2xy", "j": "x^2 + 2z", "k": "2y" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 8,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y^2, 2xy, 0) is conservative.",
+        "function": { "i": "y^2", "j": "2xy", "k": "0" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 9,
+        "problem_statement": "Test if the vector field F(x, y, z) = (2x, 2y, 2z) is conservative.",
+        "function": { "i": "2x", "j": "2y", "k": "2z" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 10,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y/(x^2 + y^2), x/(x^2 + y^2), 0) is conservative.",
+        "function": { "i": "y/(x^2 + y^2)", "j": "x/(x^2 + y^2)", "k": "0" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 11,
+        "problem_statement": "Test if the vector field F(x, y, z) = (e^x, 2y, 3z^2) is conservative.",
+        "function": { "i": "e^x", "j": "2y", "k": "3z^2" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 12,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y, -x, 0) is conservative.",
+        "function": { "i": "y", "j": "-x", "k": "0" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 13,
+        "problem_statement": "Test if the vector field F(x, y, z) = (z, 0, x) is conservative.",
+        "function": { "i": "z", "j": "0", "k": "x" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 14,
+        "problem_statement": "Test if the vector field F(x, y, z) = (2x + y, x + 3y, 0) is conservative.",
+        "function": { "i": "2x + y", "j": "x + 3y", "k": "0" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 15,
+        "problem_statement": "Test if the vector field F(x, y, z) = (cos(x), sin(y), cos(z)) is conservative.",
+        "function": { "i": "cos(x)", "j": "sin(y)", "k": "cos(z)" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 16,
+        "problem_statement": "Test if the vector field F(x, y, z) = (2xz, 2yz, x^2 + y^2) is conservative.",
+        "function": { "i": "2xz", "j": "2yz", "k": "x^2 + y^2" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 17,
+        "problem_statement": "Test if the vector field F(x, y, z) = (-y/(x^2 + y^2), x/(x^2 + y^2), 0) is conservative.",
+        "function": { "i": "-y/(x^2 + y^2)", "j": "x/(x^2 + y^2)", "k": "0" },
+        "solution": "The field is not conservative"
+      },
+      {
+        "id": 18,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y, x, 0) is conservative.",
+        "function": { "i": "y", "j": "x", "k": "0" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 19,
+        "problem_statement": "Test if the vector field F(x, y, z) = (2x, 2y, 2z) is conservative.",
+        "function": { "i": "2x", "j": "2y", "k": "2z" },
+        "solution": "The field is conservative"
+      },
+      {
+        "id": 20,
+        "problem_statement": "Test if the vector field F(x, y, z) = (y, 0, x) is conservative.",
+        "function": { "i": "y", "j": "0", "k": "x" },
+        "solution": "The field is not conservative"
+      }
+    ]
+  }
+  

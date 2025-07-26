@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve | Vectorly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/solve.css') }}">
+</head>
+<body class="solve">
+    <div class="container">
+        <header class="header">
+            <h1>Vectorly</h1>
+            <p class="subtitle">Solving: {{ operation }}</p>
+        </header>
+
+        <main class="main-content">
+            <form method="post" action="/result" class="problem-form">
+                <input type="hidden" name="operation" value="{{ operation }}">
+                
+                <div class="form-group">
+                    <label for="problem-statement">Enter your {{ operation }} problem:</label>
+                    <textarea id="problem-statement" name="problem-statement" rows="5" 
+                              placeholder="Example: Calculate ∫(x² + y) dx + (y³ - x) dy along the curve y = x² from (0,0) to (1,1)..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="parameters">Additional Parameters (if needed):</label>
+                    <input type="text" id="parameters" name="parameters" 
+                           placeholder="Example: x=0..1, y=0..1">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="solve-button">Solve Problem</button>
+                    <a href="/" class="back-button">← Choose Different Operation</a>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
