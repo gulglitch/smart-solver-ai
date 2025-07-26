@@ -31,7 +31,7 @@ Vectorly is an intelligent web application designed to solve various types of mu
 ### Setup
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/vectorly.git
+git clone https://github.com/gulglitch/smart-solver-ai.git
 cd vectorly
 ```
 
@@ -73,7 +73,7 @@ http://localhost:5000
 ### Using the Command Line Interface
 For direct problem solving without the web interface:
 ```bash
-python main.py
+python vectorly.py
 ```
 
 This will open an interactive menu where you can select different problem types and solve them directly.
